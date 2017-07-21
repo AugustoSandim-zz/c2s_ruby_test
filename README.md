@@ -47,3 +47,8 @@ $ rails db:create db:migrate db:seed
 ```bash
 $ rails s
 ```
+
+**Consulting API**
+
+Preferences use Postman for cosulting API
+endpoint: http://localhost:3000/api/v1/motorcycles
