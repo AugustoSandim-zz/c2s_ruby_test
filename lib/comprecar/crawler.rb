@@ -11,8 +11,8 @@ module Comprecar
     parse_page = Nokogiri::HTML(page)
 
     @@last_page_number = parse_page.css('.paginacao .centraliza a.ultimo')[0]['href'].match(/pagina=(\d+)/)[1].to_i
-    
-    
+
+    # @TODO Refactor moving create Motorcycle for transaction
     def import_motorcycles
       for page_number in 1..@@last_page_number do
         page = HTTParty.get(BASE_URL + PAGE_URL + "#{page_number}" + BASE_DIR)

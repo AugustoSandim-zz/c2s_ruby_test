@@ -16,8 +16,11 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+# API Tools
 gem 'nokogiri'
 gem 'httparty'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'mechanize'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
